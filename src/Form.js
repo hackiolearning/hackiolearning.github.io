@@ -95,9 +95,6 @@ function Form(props) {
         new Answer("Low-level","low-level")
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
-  if(data.questionNumber === 4){
-    formState = <p>You have completed the form</p>
-  }
   return (
     <div className="box">
       {formState}
