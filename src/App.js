@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/style.css';
 import Form from './Form.js';
+import Results from './Results.js';
 
 class App extends React.Component{
   continue(){
@@ -39,7 +40,7 @@ class App extends React.Component{
     if(this.state.questionNumber <= 3){
       content = <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>;
     } else{
-      content = <p>Results would be displayed here</p>
+      content = <Results data={this.state}/>
     }
     return content;
   
