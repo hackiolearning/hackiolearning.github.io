@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 function Results(props){
     let data = props.data;
@@ -21,10 +22,14 @@ function Results(props){
         Coursera course
         * https://www.udemy.com/course/the-web-developer-bootcamp/
     */
+   let recommendedCourse = <Card data={courses[0].recommendedCourse}/>;
+   let languages = courses[0].languages.map(function(language){
+    return <Card data={language}/>
+   });
     return <div>
         <p>For your form, you inputted the following things</p>
-        <p>Do you have experience? {data.hasExperience}</p>
-        <p>What type of project are interested in? {data.projectInterest}</p>
+        {recommendedCourse}
+        {languages}
     </div>
 }
 export default Results;
