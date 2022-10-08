@@ -29,16 +29,20 @@ class App extends React.Component{
     this.state = {
       "questionNumber":0,
       "hasExperience":undefined,
-      "projectInterest":[],
-      "learningType":[],
-      "level":[]
+      "projectInterest":undefined,
+      "learningType":undefined,
+      "level":undefined
     }
   }
   render(){
-    return <>
-    <p>Form should appear below this</p>
-      <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>
-    </>
+    let content;
+    if(this.state.questionNumber <= 3){
+      content = <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>;
+    } else{
+      content = <p>Results would be displayed here</p>
+    }
+    return content;
+  
   }
 }
 
