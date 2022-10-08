@@ -50,9 +50,9 @@ class Question extends React.Component{
         return (<div className="form">
             <p className="title">{this.props.question}</p>
             {answerElems}
-            <div className="control">
+            {this.props.data.questionNumber > 0 ? <div className="control">
                 <button className="button is-primary" onClick={this.props.back}>Back</button>
-            </div>
+            </div> : ""}
             <div className="control">
                 <button className="button is-primary" onClick={this.props.continue}>Continue</button>
             </div>
