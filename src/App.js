@@ -29,9 +29,9 @@ class App extends React.Component{
     this.state = {
       "questionNumber":0,
       "hasExperience":undefined,
-      "projectInterest":[],
-      "learningType":[],
-      "level":[]
+      "projectInterest":undefined,
+      "learningType":undefined,
+      "level":undefined
     }
   }
   render(){
