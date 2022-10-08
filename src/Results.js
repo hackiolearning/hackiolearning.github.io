@@ -2,6 +2,18 @@ import React from "react";
 
 function Results(props){
     let data = props.data;
+    let courses = [
+        {
+            "languages":["HTML","CSS","JavaScript"],
+            "recommendedCourse":"https://www.udemy.com/course/the-web-developer-bootcamp/",
+            "tags":["website","courses","high-level"]
+        },
+        {
+            "languages":["HTML","CSS","JavaScript"],
+            "recommendedCourse":"https://www.w3schools.com/",
+            "tags":["website","reading","high-level"]
+        }
+    ];
     /*
         If project type is web development, learning style is course, and level is high level, suggest:
         * HTML, CSS, Javascript
