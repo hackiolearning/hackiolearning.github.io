@@ -8,7 +8,7 @@ function Results(props){
         {
             "languages":["HTML","CSS","JavaScript"],
             "description": ["A markdown language used to create website content.","A stylesheet language used to style websites.", "A programming language used to script websites."],
-            "recommendedCourseTitle":"Udemy Web Development",
+            "recommendedCourseTitle":"Udemy",
             "recommendedCourseURL":"https://www.udemy.com/course/the-web-developer-bootcamp/",
             "recommendedCourseDesc":"A video course series on web development",
             "tags":["website","courses","high-level"]
@@ -16,10 +16,19 @@ function Results(props){
         {
             "languages":["HTML","CSS","JavaScript"],
             "description": ["A markdown language used to create website content.","A stylesheet language used to style websites.", "A programming language used to script websites."],
-            "recommendedCourseTitle":"W3 Schools Web Development",
+            "recommendedCourseTitle":"W3Schools",
             "recommendedCourseURL":"https://www.w3schools.com/",
-            "recommendedCourseDesc":"A set of tutorials for web development",
+            "recommendedCourseDesc":"A set of text-based tutorials for web development",
             "tags":["website","reading","high-level"]
+        },
+        {
+            "languages":["Python"],
+            "description":["A versatile language with many libraries for manipulating and visualizing data."],
+            "recommendedCourseTitle": "FreeCodeCamp",
+            "recommendedCourseURL":"https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+            "recommendedCourseDesc":"An interactive tutorial for learning basic python",
+            "tags":["data-visualization","hands-on","high-level"]
+
         }
     ];
     /*
