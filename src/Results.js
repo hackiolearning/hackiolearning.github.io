@@ -50,15 +50,13 @@ function Results(props){
         return course;
     }
     let courseIdx = getLanguageCourse();
-    function getLanguages() {
-        let output = [];
-        for (let i = 0; i < courses[courseIdx].languages.length; i++) {
-        
-            output.push(<Card name={courses[courseIdx].languages[i]} desc={courses[courseIdx].description[i]}/>);
-        }
-        console.log(output);
-        return output;
+    let languages = [];
+    for (let i = 0; i < courses[courseIdx].languages.length; i++) {
+    
+        languages.push(<Card name={courses[courseIdx].languages[i]} desc={courses[courseIdx].description[i]}/>);
     }
+    console.log(languages);
+    
     
     
 
@@ -67,15 +65,16 @@ function Results(props){
     
 
     return <div>
-        <p>For your form, you inputted the following things</p>
-        <p>What software do you want to make? {projectInterest}</p>
-        <p>How do you learn? {learningType}</p>
-        <p>What type of language would you like to learn? {level}</p>
-        <h2>Recommended Languages</h2>
-
-        {getLanguages()}
-        <h2>Recommended Course</h2>
-        {recommendedCourse}
+        <h2 className="title is-2">Recommended Languages</h2>
+        <div className="columns">
+            {languages}
+        </div>
+        <h2 className="title is-2">Recommended Course</h2>
+        <div className="columns">
+            {recommendedCourse}
+        </div>
+            
+        
     </div>
 }
 export default Results;
