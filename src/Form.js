@@ -84,11 +84,16 @@ function Form(props) {
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   if(data.questionNumber === 2){
-    formState = <Question question="What type of language do you want to learn?" formType="radio" property="level" answers={[
-        new Answer("Abstract coding","block-coding","A simpler, generally more visual representation for coding. Generally used for true beginners to understand concepts before syntax."),
-        new Answer("High-level","high-level","User-oriented style of coding, with great deviation from hardware architecture."),
-        new Answer("Low-level","low-level","Programming in terms that computers generally understand better than people.")
-    ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
+    let ansArr = [new Answer("Abstract coding","abstract-coding","A simpler, generally more visual representation for coding. Generally used for true beginners to understand concepts before syntax.")];
+    if(data.projectInterest !== "data-structures-algorithms"){
+        //has high level
+        ansArr.push(new Answer("High-level","high-level","User-oriented style of coding, with great deviation from hardware architecture."));
+    }
+    if(data.projectInterest !== "website"){
+        //has low level
+        ansArr.push(new Answer("Low-level","low-level","Programming in terms that computers generally understand better than people."));
+    }
+    formState = <Question question="What type of language do you want to learn?" formType="radio" property="level" answers={ansArr} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   return (
     <>
