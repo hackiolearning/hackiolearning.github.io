@@ -1,11 +1,49 @@
 
 @charset "utf-8";
 
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-
 $family-primary: "museo-sans", sans-serif;
-$family-secondary: "quiverleaf-cf", sans-serif;
-//$title-family: $family-secondary;
+$family-secondary: "contralto-small", sans-serif;
+$pale-purple: #e9eaf8;
+
+$title-family: $family-secondary;
+$title-weight: 500;
+
+$body-background-color: $pale-purple;
+
+.no-flex{
+    display:block !important;
+}
+.box.is-fullwidth{
+    width:100% !important;
+}
+.box.homepage-box{
+    max-width:700px;
+    padding-top:6rem;
+    padding-bottom:2rem;
+}
+.box{
+    border-radius:18px !important;
+}
+.button{
+    font-weight:300;
+    font-size:5rem;
+    border-radius:6px !important;
+}
+.light-purple{
+    color:#5E6180 !important;
+}
+@media screen and (min-width: 769px), print {
+    .hero-body {
+    padding: 6rem 3rem !important; } }
+.abs-bl{
+    position:absolute !important;
+    bottom:15px;
+    left:15px;
+}
+$danger:#FFB1B1;
+$size-1: 5rem;
+$weight-normal:300;
+$desktop:800px;
+$radius:10px;
 
 @import "../../node_modules/bulma/bulma.sass";
