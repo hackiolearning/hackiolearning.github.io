@@ -84,11 +84,12 @@ function Form(props) {
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   if(data.questionNumber === 2){
-    let ansArr = [new Answer("Abstract coding","abstract-coding","A simpler, generally more visual representation for coding. Generally used for true beginners to understand concepts before syntax.")];
+    let ansArr = [];
     if(data.projectInterest !== "data-structures-algorithms"){
         //has high level
-        ansArr.push(new Answer("High-level","high-level","User-oriented style of coding, with great deviation from hardware architecture."));
+        ansArr.push(new Answer("Abstract coding","abstract-coding","A simpler, generally more visual representation for coding. Generally used for true beginners to understand concepts before syntax."));
     }
+    ansArr.push(new Answer("High-level","high-level","User-oriented style of coding, with great deviation from hardware architecture."));
     if(data.projectInterest !== "website"){
         //has low level
         ansArr.push(new Answer("Low-level","low-level","Programming in terms that computers generally understand better than people."));

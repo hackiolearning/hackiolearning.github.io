@@ -55,10 +55,18 @@ function Results(props){
             "description":"A back-end version of JavaScript for making servers",
             "link":"https://nodejs.org/en/"
         },
+        "Java":{
+            "description":"Java is a high-level, class-based, object-oriented programming language",
+            "link":"https://www.java.com/en/"
+        },
         "Postman":{
             "description":"An API platform for building and using APIs",
             "link":"https://www.postman.com/"
         },
+        "Excel":{
+            "description":"Data manipulation and graphing tool",
+            "link":"https://www.microsoft.com/en-us/microsoft-365/excel"
+        }
     }
     let services = [
         {
@@ -220,12 +228,12 @@ function Results(props){
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand ml-4" >
                 <a onClick={props.reset}>
-                    <img src="navbarlogo.png" height="50" width="292"/>
+                    <img className="mt-1 mb-1" src="navbarlogo.png" height="50" width="292"/>
                 </a>
             </div>
             <div className="navbar-menu">
                 <div className="navbar-start ml-4">
-                    <a className="navbar-item p-0 ml-2">
+                    {/*<a className="navbar-item p-0 ml-2">
                         <p className="button has-background-success">Languages</p>
                     </a>
 
@@ -235,7 +243,7 @@ function Results(props){
 
                     <a className="navbar-item p-0 ml-2">
                         <p className="button has-background-danger">Tutorials</p>
-                    </a>
+                    </a> */}
 
                    
                 </div>
