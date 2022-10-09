@@ -30,7 +30,6 @@ class App extends React.Component{
     this.back = this.back.bind(this);
     this.state = {
       "questionNumber":-1,
-      "hasExperience":undefined,
       "projectInterest":undefined,
       "learningType":undefined,
       "level":undefined

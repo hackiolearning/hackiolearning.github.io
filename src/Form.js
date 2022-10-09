@@ -41,7 +41,8 @@ class Question extends React.Component{
     render(){
         let appProp = this.props.data[this.props.property];
         const answerElems = this.props.answers.map((answer,idx) => {
-            return <button data-tooltip={answer.tooltip} onClick={this.onChange(idx).bind(this)} key={idx} className="button m-1 has-tooltip-multiline">{answer.text}</button>
+            let classMap = ['is-danger','is-warning','is-success'];
+            return <button data-tooltip={answer.tooltip} onClick={this.onChange(idx).bind(this)} key={idx} className={"button m-1 is-medium has-tooltip-multiline " + classMap[idx % 3]}>{answer.text}</button>
         });
         return (<section className="hero is-fullheight">
         <div className="hero-body  is-flex-direction-column">
