@@ -64,7 +64,7 @@ function Results(props){
    let recommendedCourse = <Card name={courses[getMethodCourse()].recommendedCourseTitle} desc={courses[getMethodCourse()].recommendedCourseDesc}/>;
     
 
-    return <div>
+    return <div className="container">
         <h2 className="title is-2">Recommended Languages</h2>
         <div className="columns">
             {languages}
