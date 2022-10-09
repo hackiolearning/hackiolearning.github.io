@@ -68,11 +68,11 @@ function Form(props) {
 
   if(data.questionNumber === 0){
     formState = <Question question="What software do you want to make?" formType="radio" property="projectInterest" answers={[
-        new Answer("Games","game","You ever wanna play a video game 😍"),
-        new Answer("Websites","website"),
-        new Answer("Servers","server"),
-        new Answer("Data visualizations","data-visualization"),
-        new Answer("Data structures and algorithms","data-structures-algorithms")
+        new Answer("Games","game","Interactive game with user interface and visual feedback."),
+        new Answer("Websites","website","Content display with limited interactivity."),
+        new Answer("Servers","server","Computing accessing a central resource or service on a network."),
+        new Answer("Data visualizations","data-visualization","Graphic representation of data."),
+        new Answer("Data structures and algorithms","data-structures-algorithms","Theoretical computer science problem solving.")
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   if(data.questionNumber === 1){
@@ -85,9 +85,9 @@ function Form(props) {
   }
   if(data.questionNumber === 2){
     formState = <Question question="What type of language do you want to learn?" formType="radio" property="level" answers={[
-        new Answer("Block coding","block-coding"),
-        new Answer("High-level","high-level"),
-        new Answer("Low-level","low-level")
+        new Answer("Abstract coding","block-coding","A simpler, generally more visual representation for coding. Generally used for true beginners to understand concepts before syntax."),
+        new Answer("High-level","high-level","User-oriented style of coding, with great deviation from hardware architecture."),
+        new Answer("Low-level","low-level","Programming in terms that computers generally understand better than people.")
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   return (

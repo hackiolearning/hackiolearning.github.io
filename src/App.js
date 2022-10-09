@@ -5,6 +5,14 @@ import Results from './Results.js';
 import Homepage from './Homepage.js';
 
 class App extends React.Component{
+  reset(){
+    this.setState({
+      "questionNumber":-1,
+      "projectInterest":undefined,
+      "learningType":undefined,
+      "level":undefined
+    })
+  }
   continue(){
     let state = this.state;
     console.log(state);
@@ -28,6 +36,7 @@ class App extends React.Component{
     this.handleChange = this.handleChange.bind(this);
     this.continue = this.continue.bind(this);
     this.back = this.back.bind(this);
+    this.reset = this.reset.bind(this);
     this.state = {
       "questionNumber":-1,
       "projectInterest":undefined,
@@ -43,7 +52,7 @@ class App extends React.Component{
     else if(this.state.questionNumber <= 2){
       content = <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>;
     } else{
-      content = <Results data={this.state}/>
+      content = <Results data={this.state} reset={this.reset}/>
     }
     return content;
   

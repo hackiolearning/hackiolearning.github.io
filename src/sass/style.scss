@@ -10,7 +10,9 @@ $title-family: $family-secondary;
 $title-weight: 500;
 
 $body-background-color: $pale-purple;
-
+[data-tooltip]:not(.is-loading)::before, [data-tooltip]:not(.is-disabled)::before, [data-tooltip]:not([disabled])::before{
+    font-size:1rem !important;
+}
 .no-flex{
     display:block !important;
 }
