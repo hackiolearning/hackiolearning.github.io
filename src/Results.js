@@ -89,11 +89,11 @@ function Results(props){
         <div className="container">
             
             <h2 className="title is-2">Recommended Languages</h2>
-            <div className="columns">
+            <div className="columns is-flex-wrap-wrap">
                 {languages}
             </div>
             <h2 className="title is-2">Recommended Course</h2>
-            <div className="columns">
+            <div className="columns is-flex-wrap-wrap">
                 {recommendedCourse}
             </div>
         </div>
