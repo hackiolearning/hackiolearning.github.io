@@ -20,44 +20,44 @@ function Results(props){
             "link":"https://scratch.mit.edu/"
         },
         "Stencyl":{
-            "descrption":"A block based game engine usable for mobile, web, and desktop games",
+            "description":"A block based game engine usable for mobile, web, and desktop games",
             "link":"https://www.stencyl.com/"
         },
         "Unity":{
-            "descrption":"Powerful game engine with 2D and 3D support",
+            "description":"Powerful game engine with 2D and 3D support",
             "link":"https://unity.com/"
         },
         "Godot":{
-            "descrption":"Open source game engine with powerful 2D rendering",
+            "description":"Open source game engine with powerful 2D rendering",
             "link":"https://godotengine.org/"
         },
         "Squarespace":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"A customizable website solution requiring no code",
+            "link":"https://www.squarespace.com/"
         },
         "Unreal Engine":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"An advanced real-time 3D game engine",
+            "link":"https://www.unrealengine.com/en-US"
         },
         "C++":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"C++ is a general purpose programming language used in many applications",
+            "link":"https://cplusplus.com/doc/"
         },
         "C":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"C is a a precursor to C++",
+            "link":"https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170"
         },
         "Python":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"A high-level, general purpose scripting language",
+            "link":"https://www.python.org/"
         },
         "NodeJS":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"A back-end version of JavaScript for making servers",
+            "link":"https://nodejs.org/en/"
         },
         "Postman":{
-            "description":"placeholder",
-            "link":"placeholder"
+            "description":"An API platform for building and using APIs",
+            "link":"https://www.postman.com/"
         },
     }
     let services = [
@@ -104,7 +104,7 @@ function Results(props){
             "recommendedCourseTitle": "Scratch Jumping Game Video",
             "link":"https://www.youtube.com/watch?v=1jHvXakt1qw&ab_channel=ScratchTeam",
             "recommendedCourseDesc":"A tutorial guiding you how to make a jumping game in Scratch",
-            "tags":["game","video","block-coding"]
+            "tags":["game","video","abstract-coding"]
         },
         {
             "languages":["Godot","Unity"],
@@ -121,58 +121,58 @@ function Results(props){
             "tags":["game","course","low-level"]
         },
         {
-            "languages":["Squaresquare"],
+            "languages":["Squarespace"],
             "recommendedCourseTitle":"Squarespace Tutorial for Beginners",
-            "recomendedCourseDesc":"A video explaining how to use Squarespace to create professional, codeless websites",
+            "recommendedCourseDesc":"A video explaining how to use Squarespace to create professional, codeless websites",
             "link":"https://www.youtube.com/watch?v=f7q6eFnEZ7Y&ab_channel=SantrelMedia",
-            "tags":["website","video","abstract"]
+            "tags":["website","video","abstract-coding"]
         },
         {
             "languages":["Postman"],
             "recommendedCourseTitle":"Introduction to APIs, Postman and API testing",
-            "recomendedCourseDesc":"Explains what an API is, how they relate to servers, and how you can access them with Postman",
+            "recommendedCourseDesc":"Explains what an API is, how they relate to servers, and how you can access them with Postman",
             "link":"https://www.youtube.com/watch?v=JzpFsrZnNDo&t=0s&ab_channel=ValentinDespa",
-            "tags":["server","video","abstract"]
+            "tags":["server","video","abstract-coding"]
         },
         {
             "languages":["NodeJS","Flask"],
             "recommendedCourseTitle":"NodeJS - The Complete Guide",
-            "recomendedCourseDesc":"Course introducing AWS and related technologies",
+            "recommendedCourseDesc":"Course introducing AWS and related technologies",
             "link":"https://www.udemy.com/course/nodejs-the-complete-guide/",
             "tags":["server","course","high-level"]
         },
         {
             "languages":["C++"],
             "recommendedCourseTitle":"Building a simple server with C++",
-            "recomendedCourseDesc":"Article describing a basic low level server implementation",
+            "recommendedCourseDesc":"Article describing a basic low level server implementation",
             "link":"https://ncona.com/2019/04/building-a-simple-server-with-cpp/",
             "tags":["server","reading","low-level"]
         },
         {
             "languages":["Excel"],
             "recommendedCourseTitle":"Excel video training",
-            "recomendedCourseDesc":"Microsoft-provided tutorials for using Excel",
+            "recommendedCourseDesc":"Microsoft-provided tutorials for using Excel",
             "link":"https://support.microsoft.com/en-us/office/excel-video-training-9bc05390-e94c-46af-a5b3-d7c22f6990bb",
-            "tags":["data-visualization","video","abstract"]
+            "tags":["data-visualization","video","abstract-coding"]
         },
         {
             "languages":["C++"],
             "recommendedCourseTitle":"C++ data science article on medium",
-            "recomendedCourseDesc":"A working code example on how to implement basic machine learning in C++",
+            "recommendedCourseDesc":"A working code example on how to implement basic machine learning in C++",
             "link":"https://towardsdatascience.com/data-preprocessing-and-visualization-in-c-6d97ed236f3b",
             "tags":["data-visualization","reading","low-level"]
         },
         {
             "languages":["Python","Java"],
             "recommendedCourseTitle":"Python Data Structures",
-            "recomendedCourseDesc":"This course introduces core Python data strctures",
+            "recommendedCourseDesc":"This course introduces core Python data strctures",
             "link":"https://www.coursera.org/learn/python-data?irclickid=xyMXqh2zTxyNRxFVN2z1fRCmUkDQu6W%3AQS5VTU0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=3294490&utm_content=b2c",
             "tags":["data-structures-algorithms","course","high-level"]
         },
         {
             "languages":["C++","C"],
             "recommendedCourseTitle":"Data Structure & Algorithm using C++",
-            "recomendedCourseDesc":"Learn different data structures and problem solving skills",
+            "recommendedCourseDesc":"Learn different data structures and problem solving skills",
             "link":"https://www.udemy.com/course/data-structures-algorithms-using-c-zero-to-mastery/",
             "tags":["data-structures-algorithms","course","low-level"]
         }
@@ -216,7 +216,6 @@ function Results(props){
     }
     
    let recommendedCourse = <Card link={courses[courseIdx].link} name={courses[courseIdx].recommendedCourseTitle} desc={courses[courseIdx].recommendedCourseDesc} color="danger"/>;
-    
     return <div className>
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand ml-4" >
