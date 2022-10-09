@@ -66,7 +66,9 @@ function Results(props){
 
     return <div className>
         <nav class="navbar" role="navigation" aria-label="main navigation">
-
+            <div class="navbar-brand">
+                <img src="navbarlogo.png" height="59.5" width="249.5"/>
+            </div>
         </nav>
         <div className="container">
             
