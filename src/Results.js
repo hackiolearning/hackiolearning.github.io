@@ -88,7 +88,7 @@ function Results(props){
         </nav>
         <div className="container">
             
-            <h2 className="title is-2">Recommended Languages</h2>
+            <h2 className="title is-2 margin-top">Recommended Languages</h2>
             <div className="columns is-flex-wrap-wrap">
                 {languages}
             </div>
