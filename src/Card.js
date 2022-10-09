@@ -1,9 +1,10 @@
 import React from "react";
 
-function Results(props){
+function Card(props){
 
     return <div className="card">
-        {props.data}
+        {props.name}
+        {props.desc}
     </div>
 }
-export default Results;
+export default Card;
