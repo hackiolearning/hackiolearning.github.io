@@ -25,6 +25,7 @@ class Question extends React.Component{
                     arr.splice(searchIndex,1);
                 }
                 this.props.handleChange(property,arr);
+                this.props.continue();
             }
         }
         if(this.props.formType === "radio"){
@@ -32,6 +33,7 @@ class Question extends React.Component{
                 let property = this.props.property;
                 let value = this.props.answers[idx].val;
                 this.props.handleChange(property,value);
+                this.props.continue();
             }
         }
     }
@@ -47,16 +49,20 @@ class Question extends React.Component{
             }
             return <button onClick={this.onChange(idx).bind(this)} key={idx} className={"button"  + (shouldBeSelected ? " is-primary" : "")}>{answer.text}</button>
         });
-        return (<div className="form">
-            <p className="title">{this.props.question}</p>
-            {answerElems}
-            {this.props.data.questionNumber > 0 ? <div className="control">
-                <button className="button is-primary" onClick={this.props.back}>Back</button>
-            </div> : ""}
-            <div className="control">
-                <button className="button is-primary" onClick={this.props.continue}>Continue</button>
+        return (<section className="hero is-fullheight">
+        <div className="hero-body  is-flex-direction-column">
+            <div className="block">
+                <p className="title is-2 light-purple">Help us get to know you by answering a few questions</p>
             </div>
-        </div>);
+          <div className="box pt-6 is-flex-direction-column is-max-desktop container mb-6 is-fullwidth is-flex is-align-items-center is-justify-content-center">
+          <p className="subtitle is-3">{this.props.question}</p>
+          <div>
+                {answerElems}
+            </div>
+        {/*this.props.data.questionNumber > 0 */true ? <a className="abs-bl has-text-grey" onClick={this.props.back}>&lt; go back</a>: ""}
+        </div>
+        </div>
+        </section>);
     }
 }
 
@@ -96,9 +102,9 @@ function Form(props) {
     ]} handleChange={props.handleChange} continue={props.continue} data={data} back={props.back}/>
   }
   return (
-    <div className="box">
-      {formState}
-    </div>
+    <>
+        {formState}
+    </>
   );
 }
 

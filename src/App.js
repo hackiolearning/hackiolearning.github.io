@@ -2,6 +2,7 @@ import React from 'react';
 import './css/style.css';
 import Form from './Form.js';
 import Results from './Results.js';
+import Homepage from './Homepage.js';
 
 class App extends React.Component{
   continue(){
@@ -28,7 +29,7 @@ class App extends React.Component{
     this.continue = this.continue.bind(this);
     this.back = this.back.bind(this);
     this.state = {
-      "questionNumber":0,
+      "questionNumber":-1,
       "hasExperience":undefined,
       "projectInterest":undefined,
       "learningType":undefined,
@@ -37,7 +38,10 @@ class App extends React.Component{
   }
   render(){
     let content;
-    if(this.state.questionNumber <= 3){
+    if(this.state.questionNumber === -1){
+      content = <Homepage continue={this.continue}/>
+    }
+    else if(this.state.questionNumber <= 3){
       content = <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>;
     } else{
       content = <Results data={this.state}/>
