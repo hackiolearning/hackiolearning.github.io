@@ -1,9 +1,10 @@
 import React from 'react';
 import './css/style.css';
 class Answer{
-    constructor(text,val){
+    constructor(text,val,tooltip){
         this.text = text;
         this.val = val; 
+        this.tooltip = tooltip;
     }
 }
 class Question extends React.Component{
@@ -40,7 +41,7 @@ class Question extends React.Component{
     render(){
         let appProp = this.props.data[this.props.property];
         const answerElems = this.props.answers.map((answer,idx) => {
-            return <button onClick={this.onChange(idx).bind(this)} key={idx} className="button m-1">{answer.text}</button>
+            return <button data-tooltip={answer.tooltip} onClick={this.onChange(idx).bind(this)} key={idx} className="button m-1 has-tooltip-multiline">{answer.text}</button>
         });
         return (<section className="hero is-fullheight">
         <div className="hero-body  is-flex-direction-column">
@@ -52,7 +53,7 @@ class Question extends React.Component{
           <div className="has-text-centered">
                 {answerElems}
             </div>
-        {/*this.props.data.questionNumber > 0 */true ? <a className="abs-bl has-text-grey" onClick={this.props.back}>&lt; go back</a>: ""}
+        {<a className="abs-bl has-text-grey" onClick={this.props.back}>&lt; go back</a>}
         </div>
         </div>
         </section>);
@@ -66,7 +67,7 @@ function Form(props) {
 
   if(data.questionNumber === 0){
     formState = <Question question="What software do you want to make?" formType="radio" property="projectInterest" answers={[
-        new Answer("Games","game"),
+        new Answer("Games","game","You ever wanna play a video game 😍"),
         new Answer("Websites","website"),
         new Answer("Servers","server"),
         new Answer("Data visualizations","data-visualization"),
