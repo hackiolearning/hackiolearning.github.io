@@ -7,6 +7,7 @@ function Card(props){
             <p className="subtitle is-2">{props.name}</p>
             {props.desc}
         </div>
+        
     </div>
 
 }

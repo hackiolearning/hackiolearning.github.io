@@ -4,7 +4,6 @@ import Card from "./Card";
 function Results(props){
     let projectInterest = props.data.projectInterest;
     let learningType = props.data.learningType;
-    let level = props.data.level;
     let courses = [
         {
             "languages":["HTML","CSS","JavaScript"],
@@ -65,9 +64,26 @@ function Results(props){
     
 
     return <div className>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-                <img src="navbarlogo.png" height="59.5" width="249.5"/>
+        <nav className="navbar" role="navigation" aria-label="main navigation">
+            <div className="navbar-brand navbar-left-margin" >
+                <img src="navbarlogo.png" height="59.5" width="292"/>
+            </div>
+            <div className="navbar-menu">
+                <div className="navbar-start navbar-left-margin">
+                    <a className="navbar-item ">
+                        <p className="box has-background-success">Languages</p>
+                    </a>
+
+                    <a className="navbar-item">
+                        <p className="box has-background-warning">Services</p>
+                    </a>
+
+                    <a className="navbar-item">
+                        <p className="box has-background-danger">Tutorials</p>
+                    </a>
+
+                   
+                </div>
             </div>
         </nav>
         <div className="container">
