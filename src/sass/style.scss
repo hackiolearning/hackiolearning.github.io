@@ -41,6 +41,9 @@ $body-background-color: $pale-purple;
     bottom:15px;
     left:15px;
 }
+.box.is-fullheight{
+    height:100%;
+}
 $danger:#FFB1B1;
 $warning:rgb(252,198,255);
 $success: #ADF7ED;
