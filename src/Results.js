@@ -8,7 +8,7 @@ function Results(props){
     let courses = [
         {
             "languages":["HTML","CSS","JavaScript"],
-            "description": ["HTML DESC","CSS DESC", "JS DESC"],
+            "description": ["A markdown language used to create website content.","A stylesheet language used to style websites.", "A programming language used to script websites."],
             "recommendedCourseTitle":"Udemy Web Development",
             "recommendedCourseURL":"https://www.udemy.com/course/the-web-developer-bootcamp/",
             "recommendedCourseDesc":"A video course series on web development",
@@ -16,7 +16,7 @@ function Results(props){
         },
         {
             "languages":["HTML","CSS","JavaScript"],
-            "description": ["HTML DESC","CSS DESC", "JS DESC"],
+            "description": ["A markdown language used to create website content.","A stylesheet language used to style websites.", "A programming language used to script websites."],
             "recommendedCourseTitle":"W3 Schools Web Development",
             "recommendedCourseURL":"https://www.w3schools.com/",
             "recommendedCourseDesc":"A set of tutorials for web development",
@@ -53,7 +53,7 @@ function Results(props){
     let languages = [];
     for (let i = 0; i < courses[courseIdx].languages.length; i++) {
     
-        languages.push(<Card name={courses[courseIdx].languages[i]} desc={courses[courseIdx].description[i]}/>);
+        languages.push(<Card name={courses[courseIdx].languages[i]} desc={courses[courseIdx].description[i]} color="success"/>);
     }
     console.log(languages);
     
@@ -61,17 +61,23 @@ function Results(props){
     
 
     
-   let recommendedCourse = <Card name={courses[getMethodCourse()].recommendedCourseTitle} desc={courses[getMethodCourse()].recommendedCourseDesc}/>;
+   let recommendedCourse = <Card name={courses[getMethodCourse()].recommendedCourseTitle} desc={courses[getMethodCourse()].recommendedCourseDesc} color="danger"/>;
     
 
-    return <div className="container">
-        <h2 className="title is-2">Recommended Languages</h2>
-        <div className="columns">
-            {languages}
-        </div>
-        <h2 className="title is-2">Recommended Course</h2>
-        <div className="columns">
-            {recommendedCourse}
+    return <div className>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+
+        </nav>
+        <div className="container">
+            
+            <h2 className="title is-2">Recommended Languages</h2>
+            <div className="columns">
+                {languages}
+            </div>
+            <h2 className="title is-2">Recommended Course</h2>
+            <div className="columns">
+                {recommendedCourse}
+            </div>
         </div>
             
         

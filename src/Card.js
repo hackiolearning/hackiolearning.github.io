@@ -1,12 +1,13 @@
 import React from "react";
 
 function Card(props){
-
-    return <div className="column is-one-third m-0">
-        <div className="box">
+    let name = "box has-background-" + props.color;
+    return <div className="column is-one-third m-0 " >
+        <div className={name}>
             <p className="subtitle is-2">{props.name}</p>
             {props.desc}
         </div>
     </div>
+
 }
 export default Card;
