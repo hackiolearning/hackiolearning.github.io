@@ -41,7 +41,7 @@ class App extends React.Component{
     if(this.state.questionNumber === -1){
       content = <Homepage continue={this.continue}/>
     }
-    else if(this.state.questionNumber <= 3){
+    else if(this.state.questionNumber <= 2){
       content = <Form data={this.state} handleChange={this.handleChange} continue={this.continue} back={this.back}/>;
     } else{
       content = <Results data={this.state}/>
