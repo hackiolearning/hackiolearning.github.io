@@ -65,21 +65,21 @@ function Results(props){
 
     return <div className>
         <nav className="navbar" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand navbar-left-margin" >
-                <img src="navbarlogo.png" height="59.5" width="292"/>
+            <div className="navbar-brand ml-4" >
+                <img src="navbarlogo.png" height="50" width="292"/>
             </div>
             <div className="navbar-menu">
-                <div className="navbar-start navbar-left-margin">
-                    <a className="navbar-item ">
-                        <p className="box has-background-success">Languages</p>
+                <div className="navbar-start ml-4">
+                    <a className="navbar-item p-0 ml-2">
+                        <p className="button has-background-success">Languages</p>
                     </a>
 
-                    <a className="navbar-item">
-                        <p className="box has-background-warning">Services</p>
+                    <a className="navbar-item p-0 ml-2">
+                        <p className="button has-background-warning">Services</p>
                     </a>
 
-                    <a className="navbar-item">
-                        <p className="box has-background-danger">Tutorials</p>
+                    <a className="navbar-item p-0 ml-2">
+                        <p className="button has-background-danger">Tutorials</p>
                     </a>
 
                    
