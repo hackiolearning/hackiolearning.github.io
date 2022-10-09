@@ -10,7 +10,7 @@ function Homepage(props){
         <p className="subtitle has-text-centered">
         Square One is a hub of computer science learning sources designed to help you effectively learn new languages, get used to new services, and get started on new projects
         </p>
-        <button className="button is-large is-danger" onClick={props.continue}>get started</button>
+        <button className="button is-large is-danger" onClick={props.continue}>Get started</button>
       </div>
     </div>
   </section>
