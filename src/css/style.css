@@ -339,7 +339,7 @@ pre {
   font-family: monospace; }
 
 body {
-  color: #4a4a4a;
+  color: #1A1D31;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.5; }
@@ -392,7 +392,7 @@ fieldset {
 pre {
   -webkit-overflow-scrolling: touch;
   background-color: whitesmoke;
-  color: #4a4a4a;
+  color: #1A1D31;
   font-size: 0.875em;
   overflow-x: auto;
   padding: 1.25rem 1.5rem;
@@ -425,7 +425,7 @@ table th {
   background-color: white;
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  color: #4a4a4a;
+  color: #1A1D31;
   display: block;
   padding: 1.25rem; }
 
@@ -476,7 +476,7 @@ a.box:active {
   .button.is-text {
     background-color: transparent;
     border-color: transparent;
-    color: #4a4a4a;
+    color: #1A1D31;
     text-decoration: underline; }
     .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
       background-color: whitesmoke;
@@ -1728,11 +1728,11 @@ div.icon-text {
   .progress::-webkit-progress-bar {
     background-color: #ededed; }
   .progress::-webkit-progress-value {
-    background-color: #4a4a4a; }
+    background-color: #1A1D31; }
   .progress::-moz-progress-bar {
-    background-color: #4a4a4a; }
+    background-color: #1A1D31; }
   .progress::-ms-fill {
-    background-color: #4a4a4a;
+    background-color: #1A1D31;
     border: none; }
   .progress.is-white::-webkit-progress-value {
     background-color: white; }
@@ -1820,7 +1820,7 @@ div.icon-text {
     animation-name: moveIndeterminate;
     animation-timing-function: linear;
     background-color: #ededed;
-    background-image: linear-gradient(to right, #4a4a4a 30%, #ededed 30%);
+    background-image: linear-gradient(to right, #1A1D31 30%, #ededed 30%);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 150% 150%; }
@@ -2017,7 +2017,7 @@ div.icon-text {
   align-items: center;
   background-color: whitesmoke;
   border-radius: 10px;
-  color: #4a4a4a;
+  color: #1A1D31;
   display: inline-flex;
   font-size: 0.75rem;
   height: 2em;
@@ -2167,7 +2167,7 @@ a.tag:hover {
     font-size: 0.75rem; }
 
 .subtitle {
-  color: #4a4a4a;
+  color: #1A1D31;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.25; }
@@ -2777,7 +2777,7 @@ a.tag:hover {
 
 .file-cta {
   background-color: whitesmoke;
-  color: #4a4a4a; }
+  color: #1A1D31; }
 
 .file-name {
   border-color: #dbdbdb;
@@ -2978,7 +2978,7 @@ a.tag:hover {
   .control.has-icons-left .input:focus ~ .icon,
   .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon,
   .control.has-icons-right .select:focus ~ .icon {
-    color: #4a4a4a; }
+    color: #1A1D31; }
   .control.has-icons-left .input.is-small ~ .icon,
   .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
   .control.has-icons-right .select.is-small ~ .icon {
@@ -3080,7 +3080,7 @@ a.tag:hover {
   background-color: white;
   border-radius: 0.25rem;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
-  color: #4a4a4a;
+  color: #1A1D31;
   max-width: 100%;
   position: relative; }
 
@@ -3191,7 +3191,7 @@ a.tag:hover {
   padding-top: 0.5rem; }
 
 .dropdown-item {
-  color: #4a4a4a;
+  color: #1A1D31;
   display: block;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3350,7 +3350,7 @@ button.dropdown-item {
   line-height: 1.25; }
   .menu-list a {
     border-radius: 2px;
-    color: #4a4a4a;
+    color: #1A1D31;
     display: block;
     padding: 0.5em 0.75em; }
     .menu-list a:hover {
@@ -3468,7 +3468,7 @@ button.dropdown-item {
 
 .message-header {
   align-items: center;
-  background-color: #4a4a4a;
+  background-color: #1A1D31;
   border-radius: 10px 10px 0 0;
   color: #fff;
   display: flex;
@@ -3491,7 +3491,7 @@ button.dropdown-item {
   border-radius: 10px;
   border-style: solid;
   border-width: 0 0 0 4px;
-  color: #4a4a4a;
+  color: #1A1D31;
   padding: 1.25em 1.5em; }
   .message-body code,
   .message-body pre {
@@ -4078,7 +4078,7 @@ body.has-navbar-fixed-bottom {
   overflow-y: hidden; }
 
 .navbar-burger {
-  color: #4a4a4a;
+  color: #1A1D31;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -4121,7 +4121,7 @@ body.has-navbar-fixed-bottom {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #1A1D31;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
@@ -4608,7 +4608,7 @@ a.navbar-item,
       color: #363636; }
 
 .panel-list a {
-  color: #4a4a4a; }
+  color: #1A1D31; }
   .panel-list a:hover {
     color: #485fc7; }
 
@@ -4670,7 +4670,7 @@ label.panel-block {
     border-bottom-color: #dbdbdb;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    color: #4a4a4a;
+    color: #1A1D31;
     display: flex;
     justify-content: center;
     margin-bottom: -1px;
